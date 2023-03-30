@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    /* border:1px solid red; */
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color:rgb(74, 113, 185);
+    color:rgb(220,220,220);
+    font-size:0.8rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+p{
+    font-size:0.9rem;
+    line-height:1.5;
+}
+
+a.text-link{
+    color: rgb(145, 251, 249);
+    position:relative;
+}
+
+a.text-link:after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:1rem;
+    top:0;
+    left:0;
+    border-bottom:1px solid rgb(255, 255, 255);
+    transition: width 0.5s;
+}
+
+a.text-link:hover:after, a.text-link:focus{
+    width:100%
+}
+
+a.button-link{
+    font-size:0.8rem;
+    border:1px solid rgb(143,235,217);
+    border-radius:5px;
+    padding:1em 1.2em;
+    background-color:rgb(14,25,46);
+    transition: background-color 1s;
+    color: rgb(143,235,217);
+}
+
+a.button-link:hover, a.button-link:focus{
+    background-color:rgb(28,48,63);
+}
+
+ul{
+    margin:0;
+    margin-left:1rem;
+    padding:0;
+    line-height: 2;
+}
+
+/* header section start */
+header{
+    display:flex;
+    justify-content: space-between;
+    padding:3rem;
+}
+
+
+header .logo{
+    color: rgb(145, 251, 249);
+    font-size:1.2rem;
+}
+
+header .navigation{
+    display:flex;
+    justify-content: space-around;
+}
+
+header .navigation ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    font-size:0.8rem;
+}
+
+header .navigation li{
+    margin-right:2rem;
+    display:inline;
+}
+
+header nav a{
+    color:rgb(220,220,220);
+    transition: color 1.5s;
+}
+
+header nav a:hover, header .nav a:focus{
+    color:rgb(143,235,217);
+    
+}
+
+.navigation span{
+    color: rgb(143,235,217);
+}
+
+.mobile-nav-icon{
+    color:rgb(143,235,217);
+    font-size:1.5rem;
+    display:none;
+}
+
+img{
+    width:100%;
+}
+
+@media screen and (max-width:800px) {
+    .mobile-nav-icon{
+        display:block;
+    }
+
+     .navigation div{
+        display: none;
+       
+    } 
+
+    header{
+        flex-direction: column;
+    }
+
+    header nav{
+        width:100%;
+    }
+
+    header nav ul{
+        width:100%;
+        /* border:1px solid green; */
+    }
+
+    header .navigation li{
+        display:block;
+    }
+}
+
+

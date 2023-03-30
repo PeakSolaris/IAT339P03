@@ -1,0 +1,254 @@
+/* me section start */
+.me-section{
+    height:80vh;
+    /* border:1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.me-section span{
+    font-size:1rem;
+    font-weight:noraml;
+    color: rgb(143,235,217);
+    display:block;
+}
+
+.me-section div{
+    margin-top:4rem;
+}
+
+h1{
+    font-size:4rem;
+    color:white;
+}
+
+h2{
+    font-size:1.8rem;
+}
+
+h3{
+    font-size:1.5rem;
+}
+
+h3 a{
+    transition: all 0.5s;
+    color:white;
+}
+
+h3 a:hover, h3 a:focus{
+    color: rgb(143,235,217);
+}
+
+h2 span{
+    color: rgb(143,235,217);
+}
+
+main{
+    max-width: 1200px;
+    margin:auto;
+    padding:2rem;
+}
+
+header p{
+    max-width:600px;
+}
+
+@media screen and (max-width:800px) {
+    h1{
+        font-size:6vw;
+    }
+}
+
+@media screen and (max-width:500px) {
+    h1{
+        font-size:2rem;
+    }
+}
+
+.language{
+    display:flex;
+    gap:3rem;
+}
+
+.language li{
+    list-style-type: circle;
+}
+
+.about-detail{
+    display:flex;
+    justify-content: space-between;
+    gap:3rem;
+}
+
+#about .left{
+    width:65%;
+}
+
+#about .right{
+    width:35%;
+}
+
+#about .right img{
+    filter: drop-shadow(rgb(3, 6, 20) 0px 0px 8px);
+}
+
+
+@media screen and (max-width:800px) {
+    .about-detail{
+        flex-direction: column;
+        gap:1rem;
+    }
+
+    #about .left{
+        width:100%;
+        order:2;
+    }
+    
+    #about .right{
+        width:100%;
+        order:1;
+        text-align:center;
+    }
+
+    #about .right img{
+        width:50%;
+        min-width: 320px;
+    }
+}
+
+/* project section start*/
+.project{
+    margin:10rem 0;
+}
+
+.project-content{
+    display:flex;
+    text-align:right;
+    margin-top:2rem;
+    margin-bottom:8rem;
+}
+
+.even{
+    flex-direction: row-reverse;
+    text-align: left;
+}
+
+.project-content>div{
+    width:50%;
+}
+
+.project-info>div:nth-of-type(1){
+    font-size:0.8rem;
+    color: rgb(143,235,217);
+}
+
+.project-info p{
+    background-color: rgb(13, 35, 47);
+    padding:1.5rem;
+    /* text-align:right; */
+}
+
+.project-content ul, .project-content li{
+    margin:0;
+    padding:0;
+}
+
+.project-content li{
+    display:inline;
+    margin-left:1.5rem;
+}
+
+.project-content .other-link{
+    text-align: right;
+    margin:1rem 0;
+}
+
+.project-content .other-link i{
+    margin-left:1.5rem;
+    font-size:1.2rem;
+}
+
+.project-content .other-link a{
+    color:white;
+    transition: all 0.5s;
+}
+
+.project-content .other-link a:hover, .project-content .other-link a:focus{
+    color: rgb(143,235,217);
+}
+
+.project-info{
+    position:relative;
+    left:-5rem;
+}
+
+.even .project-info{
+    position:relative;
+    left:0rem;
+}
+
+.even .project-img{
+    position:relative;
+    left:-5rem;
+    filter: drop-shadow(rgb(3, 6, 20) 0px 0px 8px);
+}
+
+@media screen and (max-width:850px) {
+    .project-content{
+        flex-direction: column;
+        text-align: left;
+
+        background-color:rgb(17, 31, 51);
+        padding:1rem;
+        margin-bottom:2rem;
+    }
+
+    .project-content p{
+        padding:0;
+
+    }
+
+    .project-content>div{
+        width:100%;
+        margin:auto;
+    }
+
+    .project-info{
+        left:0rem;
+    }
+
+    .even .project-img{
+        position:relative;
+        left:0rem;
+        filter: drop-shadow(rgb(3, 6, 20)0px 0px 8px);
+    }
+
+
+}
+
+
+/* other work start*/
+.other-work-content{
+    display:flex;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.other-work-content>a>section{
+    flex:1;
+    background-color: rgb(21,34,62);
+    padding:1rem;
+}
+
+.other-work-content a{
+    color:white;
+    transition: all 1s;
+    display:block;
+    border:1px solid rgb(143,235,217);
+}
+
+.other-work-content a:hover, .other-work-content a:focus{
+    transform: translate(0, -1rem);
+}
+
