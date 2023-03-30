@@ -1,27 +1,40 @@
 /* me section start */
 .me-section{
     height:80vh;
-    /* border:1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* align-items: center; */
-}
-.me-section span{
-    font-size:1rem;
-    font-weight:noraml;
-    color: rgb(143,235,217);
-    display:block;
+    background-color: rgb(5, 27, 38);
+    margin-bottom: 4rem;
 }
 
-.me-section div{
-    margin-top:4rem;
+
+.me-section p, .me-section h1{
+    margin-left: 20%;
 }
 
-h1{
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+
+
+
+/* .me-section div{
+    margin-top:2rem;
+} */
+
+/* h1{
     font-size:4rem;
     color:white;
-}
+} */
 
 h2{
     font-size:1.8rem;

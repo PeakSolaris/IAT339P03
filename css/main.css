@@ -1,11 +1,12 @@
 *{
     box-sizing: border-box;
+    
     /* border:1px solid red; */
 }
 
 body{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    background-color:rgb(74, 113, 185);
+    background-color:rgb(47, 63, 92);
     color:rgb(220,220,220);
     font-size:0.8rem;
 }
@@ -18,6 +19,7 @@ p{
     font-size:0.9rem;
     line-height:1.5;
 }
+
 
 a.text-link{
     color: rgb(145, 251, 249);
