@@ -207,6 +207,8 @@ header p{
     filter: drop-shadow(rgb(3, 6, 20) 0px 0px 8px);
 }
 
+
+
 @media screen and (max-width:850px) {
     .project-content{
         flex-direction: column;
@@ -265,3 +267,32 @@ header p{
     transform: translate(0, -1rem);
 }
 
+/* contact section start*/
+
+.contactinfo{
+    width: 40vw;
+   
+   margin: auto;
+   padding: 5rem;
+}
+
+.contactinfo h2{
+    text-align: center;
+}
+
+.contactlink{
+    
+    text-align: center;
+}
+
+.contactlink a{
+    color:white;
+    transition: all 0.5s;
+    text-align: center;
+    font-size: 2em;
+    padding: 0.5rem;
+}
+
+.contactlink a:hover{
+    color: rgb(143,235,217);
+}

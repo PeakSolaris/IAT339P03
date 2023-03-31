@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Andrea Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+  <link href="css/feature1.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script src="js/movingletters.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- <div class="logo">B</div> -->
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li><span>01.</span> <a href="Home.html">About</a></li>
+          <li><span>02.</span> <a href="#work">Project</a></li>
+          <li><span>03.</span> <a href="">Contact</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+  </header>
+
+
+  <section class="product-details">
+    <div class="flex-box">
+      <div class="left">
+        <div class="big-img">
+          <img src="images/homepage.png" alt="prodctimg">
+        </div>
+        <div class="images">
+          <div class="small-img">
+            <img src="images/codepart1.png" alt="code1" onclick="showImg(this.src)">
+          </div>
+          <div class="small-img">
+            <img src="images/codepart2 .png" alt="code2" onclick="showImg(this.src)">
+          </div>
+          <div class="small-img">
+            <img src="images/codepart3.png" alt="code3" onclick="showImg(this.src)">
+          </div>
+          <div class="small-img">
+            <img src="images/gitworkspace.png" alt="code4" onclick="showImg(this.src)">
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="Projecttitle"> <h2>Feature project: shopping website building from IAT339</h2></div>
+        <div class="Projectname"><h2>Cocomolo shopping website</h2></div>
+
+        <div class="description">
+          <p>We used html, css, and javascript, and unlike our previous group work, we were asked to use git to build
+            the web pages and observe our changes and progress on git. I personally think that git is a good platform,
+            not only can it be open source, and it is very easy for my clients to view my website. The design and
+            discussion of style sheets is especially critical when doing basic programming. I am very passionate about
+            consistency in web design and the importance of improving the user experience.
+          </p>
+          <p>Reflection:</p>
+          <p>In this project we were given a limited amount of time to complete the project, and if we had more time, we would have set
+            up more places on the page to utilise js in order to make the process smoother and smoother for the
+            customer.
+          </p>
+        </div>
+        <!--
+        Source referred to for product description:
+        Cocomolo. (2020). Retrieved from https://www.facebook.com/cocomolo.official/photos/pb.100036786325592.-2207520000./919210948544645/?type=3
+        -->
+
+        <div><a href="Home.html" class="button-link">Back to homepage</a></div>
+
+      </div>
+
+    </div>
+
+    <script>
+      let bigImg = document.querySelector('.big-img img');
+      function showImg(pic) {
+        bigImg.src = pic;
+      }
+    </script>
+  </section>
+</body>
