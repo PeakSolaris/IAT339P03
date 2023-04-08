@@ -1,7 +1,12 @@
 @import "compass/css3";
 
+/* 
+*{
+    border: 1px solid red;
+} */
 /* me section start */
 .me-section{
+
     height:80vh;
     display: flex;
     flex-direction: column;
@@ -10,26 +15,34 @@
     margin-bottom: 4rem;
 }
 
+/* .me-section *{
+    border: 1px solid red;
+} */
 
-.me-section p, .me-section h1{
-    margin-left: 20%;
+.me-section h1{
+    width:60%;
+    margin: auto;
+    margin-bottom: 2rem;
 }
 
-.text__glitch{
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: Uppercase;
+.me-section p{
+    width: 60%;
+    margin: auto;
+    margin-top: 0%;
+}
+
+
+  .ml12 {
+    font-weight: 200;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
   }
-
-/* .me-section div{
-    margin-top:2rem;
-} */
-
-/* h1{
-    font-size:4rem;
-    color:white;
-} */
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 
 h2{
     font-size:1.8rem;
@@ -99,6 +112,8 @@ header p{
 
 #about .right img{
     filter: drop-shadow(rgb(3, 6, 20) 0px 0px 8px);
+    width: 100%;
+    
 }
 
 
@@ -120,8 +135,8 @@ header p{
     }
 
     #about .right img{
-        width:50%;
-        min-width: 320px;
+        width:100%;
+        
     }
 }
 
@@ -262,16 +277,26 @@ header p{
     transform: translate(0, -1rem);
 }
 
+@media screen and (max-width:850px) {
+    .other-work-content{
+        flex-direction: column;
+    }
+
+}
+
 /* contact section start*/
 
 .contactinfo{
-    width: 40vw;
+ 
+    /* width: 40vw; */
    
    margin: auto;
-   padding: 5rem;
+  text-align: center;
 }
 
+
 .contactinfo h2{
+    margin-top: 10rem;
     text-align: center;
 }
 
@@ -290,4 +315,19 @@ header p{
 
 .contactlink a:hover{
     color: rgb(143,235,217);
+}
+
+@media screen and (max-width:800px) {
+    .contactinfo{
+        display: flex;
+        flex-direction: column;
+    }
+    .contactinfo h3{
+       text-align: center;
+       font-size: medium;
+    }
+    
+    .contactlink a{
+        font-size: 1.5em;
+    }
 }
