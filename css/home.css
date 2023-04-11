@@ -20,11 +20,9 @@
 } */
 
 .me-section h1{
-    width:60%;
+    width:80%;
     margin: auto;
     margin-bottom: 2rem;
-}
-
     margin-top: 0%;
 }
 
@@ -67,13 +65,17 @@ main{
     padding:2rem;
 }
 
-header p{
+.me-section p{
     max-width:600px;
+    margin-left: 10%;
 }
 
 @media screen and (max-width:800px) {
     h1{
         font-size:6vw;
+    }
+    header p{
+        max-width:300px;
     }
 }
 
