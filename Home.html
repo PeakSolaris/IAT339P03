@@ -9,7 +9,7 @@
   <link href="css/normalize.css" rel="stylesheet" />
   <link href="css/main.css" rel="stylesheet" />
   <link href="css/home.css" rel="stylesheet" />
-  <link href="css/glitcheffect.css" rel="stylesheet" />
+  
   <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
   <link href='https://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
 
@@ -37,7 +37,30 @@
   </header>
   <div class="banner">
     <div class="me-section">
-      <h1 class="show-anim">ANDREA HUANG</h1>
+      <h1 class="ml12">Andrea Huang</h1>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+      <script>
+        var textWrapper = document.querySelector('.ml12');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: true})
+  .add({
+    targets: '.ml12 .letter',
+    translateX: [40,0],
+    translateZ: 0,
+    opacity: [0,1],
+    easing: "easeOutExpo",
+    duration: 1200,
+    delay: (el, i) => 500 + 30 * i
+  }).add({
+    targets: '.ml12 .letter',
+    translateX: [0,-30],
+    opacity: [1,0],
+    easing: "easeInExpo",
+    duration: 1100,
+    delay: (el, i) => 100 + 30 * i
+  });
+      </script>
       <p>
         work as a front-end web designer, a 3D modeller, a freelance digital illustrator.
       </p>
@@ -113,14 +136,14 @@
 
       <section class="project-content even">
         <div class="project-img">
-          <a href="#"><img src="images/preview.png" alt="project one screen shoot" /></a>
+          <a href="Featureproject2.html"><img src="images/preview.png" alt="project one screen shoot" /></a>
         </div>
         <div class="project-info">
           <div>Featured Project</div>
-          <h3><a href=""> Accessible flashlight design - 3D model</a></h3>
+          <h3><a href="Featureproject2.html"> Accessible flashlight design - 3D model</a></h3>
           <p>
             Project aimed at designing energy-efficient and accessible flashlights for exclusive persona. 
-            <a href="#" class="text-link">Click here to view more</a>.
+            <a href="Featureproject2.html" class="text-link">Click here to view more</a>.
           </p>
 
           <div class="other-link">

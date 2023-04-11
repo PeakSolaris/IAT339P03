@@ -15,13 +15,18 @@
     margin-left: 20%;
 }
 
-.text__glitch{
-    font-size: 30px;
-    letter-spacing: 1px;
-    text-align: center;
-    text-transform: Uppercase;
-  }
 
+.ml12 {
+    font-weight: 200;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+  }
+  
+  .ml12 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
 /* .me-section div{
     margin-top:2rem;
 } */
@@ -120,8 +125,7 @@ header p{
     }
 
     #about .right img{
-        width:50%;
-        min-width: 320px;
+        width:100%
     }
 }
 
