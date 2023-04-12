@@ -260,8 +260,8 @@ main{
 
 .other-work-content>a>section{
     flex:1;
-    background-color: rgb(21,34,62);
-    padding:1rem;
+   
+    padding:0.5rem;
 }
 
 .other-work-content a{
@@ -328,4 +328,21 @@ main{
     .contactlink a{
         font-size: 1.5em;
     }
+}
+
+#styleguide{
+
+    margin: auto;
+    /* border: 1px solid red; */
+    width: 300px;
+    text-align: center;
+    margin-top: 4rem;
+}
+
+#styleguide a{
+    color: white
+}
+
+#styleguide a:hover, #styleguide a:focus{
+    color: rgb(143,235,217);
 }

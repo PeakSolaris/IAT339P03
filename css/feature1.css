@@ -1,8 +1,8 @@
 .product-details{
+    /* border: 1px solid red; */
     margin: auto;
+    margin-top: 10em;
 }
-
-
 
 
 .big-img img{
@@ -55,4 +55,87 @@
 
 .small-img:hover img{
   transform: scale(1.2);
+}
+
+.homebutton{
+  margin-top: 4rem;
+}
+
+@media screen and (max-width:850px) {
+  .flex-box{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .right{
+    /* border: 1px solid red; */
+    width: 100%;
+    margin-left: 0rem;
+  }
+
+  .left{
+    /* border: 1px solid red; */
+    width: 100%;
+  }
+
+  
+.homebutton{
+  /* border: 1px solid red; */
+
+  margin-top: 0;
+}
+  
+}
+
+/* project steps part */
+.project-step{
+  display:flex;
+  text-align:right;
+  margin-top:5rem;
+  margin-bottom:8rem;
+  margin-left: 4rem;
+}
+
+.even{
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.project-step>div{
+  width:50%;
+}
+
+.project-descri>div:nth-of-type(1){
+  font-size:0.8rem;
+  color: rgb(143,235,217);
+}
+
+@media screen and (max-width:850px) {
+  .project-step{
+      /* border: 1px solid red; */
+      flex-direction: column;
+      text-align: left;
+      margin-left: 0rem;
+      background-color:rgb(17, 31, 51);
+      padding:1rem;
+      margin-bottom:2rem;
+  }
+
+  .project-step p{
+    padding:0;
+
+}
+
+.project-step>div{
+    width:100%;
+    margin:auto;
+}
+  .even .project-img{
+    position:relative;
+    left:0rem;
+    filter: drop-shadow(rgb(3, 6, 20)0px 0px 8px);
+}
+
 }
