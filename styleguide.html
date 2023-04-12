@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/453e4b626a.js" crossorigin="anonymous"></script>
+  <script src="javascript/script.js"></script>
+  <title>Andrea Portfolio - Style Guide</title>
+  <link href="css/normalize.css" rel="stylesheet" />
+  <link href="css/main.css" rel="stylesheet" />
+
+  <link href="css/feature1.css" rel="stylesheet" />
+  <link href="css/index.css" rel="stylesheet" />
+  <link href="css/home.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+  <header>
+
+    <div class="navigation">
+      <nav>
+        <ul>
+          <li><span>01.</span> <a href="Home.html">Home</a></li>
+          <li><span>02.</span> <a href="styleguide.html">Styleguides/citations</a></li>
+        </ul>
+      </nav>
+
+    </div>
+
+
+  </header>
+
+  <section class="index">
+    
+    <div class="index-box">
+      <div class="index-left">
+        <h2>Basic Styles</h2>
+        <a href="#bios">Personal bio</a>
+        <a href="#color">Colour Palette</a>
+        <a href="#fonts">Typefaces</a>
+
+        <h2>Code Structure & Citations</h2>
+        <a href="#items">Interactive Items</a>
+        <a href="#texts">Text Elements</a>
+        <a href="#elements">Combined Elements</a>
+        <a href="#citations">Citations</a>
+      </div>
+
+      <div class="citations-right">
+        <h1 class="title">Style Guide</h1>
+        <h2 id="ideas">Personal bios</h2>
+        <div class="border"></div>
+        <div class="coding">
+          <p>My name is Andrea, a undergraduate student of SFU. I am interested in
+            front-end web development and design. In my current career, I have also worked on art design for student
+            film projects, modeling of 3D architectural designs, front-end shopping website constructions, and UI/UX
+            design.</p>
+        </div>
+
+        <h2 id="colours">Colour Palette</h2>
+        <div class="border"></div>
+        <div class="image-container">
+          <div class="column">
+            <div class="colour-box" id="black"></div>
+            <p>rgb(5, 27, 38)– Darkblue</p>
+            <p>&ensp;• &ensp;used for the overall background color.</p>
+          </div>
+
+          <div class="column">
+            <div class="colour-box" id="red"></div>
+            <p>rgb(143,235,217) – Lightblue </p>
+            <p>&ensp;• &ensp;used to highlight the item that is being hovered over.</p>
+          </div>
+
+          <div class="column">
+            <div class="colour-box" id="green"></div>
+            <p>rgb(3, 6, 20) – Black </p>
+            <p>&ensp;• &ensp;used for the header background and buttons.</p>
+          </div>
+
+          <div class="column">
+            <div class="colour-box" id="white"></div>
+            <p>rgb(255,255,255) – White</p>
+            &ensp;• &ensp;used for overall text, makes great contrast to the background color.
+          </div>
+
+        </div>
+
+        <h2 id="fonts">Typefaces</h2>
+        <div class="border"></div>
+        <div class="font">
+          <p>&ensp;• &ensp;The main font is sans-serif Verdana, Geneva, Tahoma. Geneva is a neo-grotesque or
+            "industrial" sans-serif typeface designed by Susan Kare for Apple Computer. It is one of the oldest fonts
+            shipped with Macintosh operating systems.</p>
+        </div>
+
+        <div class="line"></div>
+
+        <h2 id="items">Interactive Items</h2>
+        <div class="border"></div>
+        <section class="element">
+          <h2>In-text link</h2>
+          <h4>CSS selector:</h4>
+          <p>.text-link</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#" class="text-link" &gt;a student-led documentary project: Entertainment&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <a href="" class="text-link">a student-led documentary project: Entertainment</a>
+
+        </section>
+
+
+
+        <section class="element">
+
+          <h2>Navigation bar design</h2>
+
+          <h4>CSS selector:</h4>
+          <p>.navigation</p>
+
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;Default Button&lt;/a&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <div class="navigation_example">
+            <nav>
+              <ul>
+                <li><span>01.</span> <a href="Home.html">Home</a></li>
+                <li><span>02.</span> <a href="#about">About</a></li>
+                <li><span>03.</span> <a href="#work">Project</a></li>
+
+              </ul>
+            </nav>
+          </div>
+
+        </section>
+
+        <!-- <div class="line"></div> -->
+
+        <section class="element">
+          <h2>Submit/Reset Buttons</h2>
+          <h4>CSS selector:</h4>
+          <p></p>
+          <h4>Sample code:</h4>
+          <code>&lt;input type="submit" value="Submit"&gt;</code>
+          <h4>Rendered element:</h4>
+          <div class="homebutton"><a href="Home.html" class="button-link">Back to homepage</a></div>
+          <br>
+        </section>
+
+
+
+        <!-- knowledge here is from w3cschool website -->
+        <section class="element">
+          <h2>Image as a Link</h2>
+          <h4>CSS selector:</h4>
+          <p>.linked-img</p>
+          <h4>Sample code:</h4>
+          <code>&lt;a href="#"&gt;&lt;img src="#" alt="example"&gt;</code>
+
+          <h4>Rendered element:</h4>
+          <p>The image below is a link. Try to click on it.</p>
+
+          <a href="#"><img src="images/preview.png" alt="preview_project2" class="linked-img"></a>
+        </section>
+
+        <section id="text_elements">
+          <h2 id="texts">Text Elements </h2>
+          <div class="border"></div>
+
+          <section class="element">
+            <h2>Headings</h2>
+            <h4>CSS selector:</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;h3&gt;Headings&lt;/h3&gt;</code>
+            <h4>Rendered element:</h4>
+            <h3>Headings</h3>
+            <h2>Heading 2</h2>
+            <h3>Heading 3</h3>
+            <h4>Heading 4</h4>
+            <h5>Heading 5</h5>
+            <h6>Heading 6</h6>
+          </section>
+
+          <div class="line"></div>
+
+          <section class="element">
+            <h2>Paragraphs</h2>
+            <h4>CSS selector:</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+            <h4>Rendered element:</h4>
+            <p>This is a paragraph.</p>
+          </section>
+
+          <div class="line"></div>
+
+          <section class="element">
+            <h2>Numbered Lists</h2>
+            <h4>CSS selector: language</h4>
+            <p></p>
+            <h4>Sample code:</h4>
+            <code>&lt;li&gt;javescript&lt;/li&gt;</code>
+            <h4>Rendered element:</h4>
+            <div class="language">
+              <ul>
+                <li>JavaScript </li>
+                <li>html:5</li>
+                <li>Java</li>
+              </ul>
+              <ul>
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>Maya</li>
+              </ul>
+            </div>
+          </section>
+
+          <div class="line"></div>
+          <!-- COMBINED ELEMENTS SECTION // -->
+          <section id="combined_elements">
+            <h2 id="elements">Combined Elements</h2>
+            <div class="border"></div>
+
+            <section class="element">
+              <h2>Banner section</h2>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+
+              <h4>Rendered element:</h4>
+              <div class="banner">
+                <div class="me-section">
+            
+                  <h1 class="ml12">ANDREA HUANG</h1>
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+                  <script>
+                    var textWrapper = document.querySelector('.ml12');
+                    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+            
+                    anime.timeline({ loop: true })
+                      .add({
+                        targets: '.ml12 .letter',
+                        translateX: [40, 0],
+                        translateZ: 0,
+                        opacity: [0, 1],
+                        easing: "easeOutExpo",
+                        duration: 1200,
+                        delay: (el, i) => 500 + 30 * i
+                      }).add({
+                        targets: '.ml12 .letter',
+                        translateX: [0, -30],
+                        opacity: [1, 0],
+                        easing: "easeInExpo",
+                        duration: 1100,
+                        delay: (el, i) => 100 + 30 * i
+                      });
+                  </script>
+            
+            
+            
+                  <p>
+                    work as a front-end web designer, a 3D modeller, a freelance digital illustrator.
+                  </p>
+            
+                </div>
+              </div>
+            </section>
+            <div class="line"></div>
+            <section class="element">
+              <h2>Basic layout showing</h2>
+              <h2>Main Navigation</h2>
+              <h4>Rendered element:</h4>
+              <div class="navigation_example">
+                <nav>
+                  <ul>
+                    <li><span>01.</span> <a href="Home.html">Home</a></li>
+                    <li><span>02.</span> <a href="#about">About</a></li>
+                    <li><span>03.</span> <a href="#work">Project</a></li>
+
+                  </ul>
+                </nav>
+              </div>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section class="element">
+              <h2>About-me section</h2>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+              <h4>Rendered element:</h4>
+              <section id="about" data-aos="fade-up" data-aos-duration="2000">
+                <h2><span>01.</span> About Me</h2>
+                <div class="about-detail">
+                  <div class="left">
+                    <p>
+                      My name is Andrea, a undergraduate student of SFU. I am interested in
+                      front-end web development and design. In my current career, I have also worked on art design for
+                      student
+                      film projects, modeling of 3D architectural designs, front-end shopping website constructions, and
+                      UI/UX
+                      design.
+                    </p>
+                    <p>
+                      Fast-forward to today, and I’ve had the privilege of working at
+                      <a href="" class="text-link">a student-led documentary project: Entertainment</a>,
+                      <a href="" class="text-link">a student-led 3D achiteture project</a>, and
+                      <a href="" class="text-link">a student-led design studio</a>. My
+                      main focus these days is building accessible and responsive designed with
+                      my own style website.
+                    </p>
+
+                  </div>
+
+                  <div class="right">
+                    <img src="images/IMG_2180.png" alt="this is my" />
+                  </div>
+                </div>
+              </section>
+
+            </section>
+
+            <div class="line"></div>
+
+            <section class="element">
+              <h2>Case showing</h2>
+              <h4>CSS selector:</h4>
+              <p></p>
+              <h4>Sample code:</h4>
+              <!-- <code>&lt;label for="cname"&gt;Name on Card&lt;/label&gt;</code> -->
+
+              <h4>Rendered element:</h4>
+              <section id="work" class="project">
+                <!-- <h2><span>02.</span> Some Things I’ve Built</h2> -->
+                <section class="project-content">
+                  <div class="project-img">
+                    <a href="Featureproject1.html"><img src="images/project1.png" alt="project one screen shoot" /></a>
+                  </div>
+                  <div class="project-info">
+                    <div>Featured Project</div>
+                    <h3><a href="">Cocomole shopping website</a></h3>
+                    <p>
+                      A student-led project - shopping website with minial design. Available on
+                      <a href="#" class="text-link">Chrome</a>,
+                      <a href="#" class="text-link">Safari</a>,
+                      <a href="#" class="text-link">Firefox</a>.
+                    </p>
+
+                    <div class="other-link">
+                      <a href=""><i class="fa-brands fa-github"></i></a>
+                      <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </section>
+
+
+            </section>
+
+              <div class="line"></div>
+
+              <section class="element">
+                <h2>Other projects section</h2>
+                <h4>CSS selector:</h4>
+                <p></p>
+                <h4>Sample code:</h4>
+
+                <h4>Rendered element:</h4>
+                <div class="other-work">
+                  <h2>Other Noteworthy Projects</h2>
+                  <section class="other-work-content">
+                    <a href="#">
+                      <section class="other-project-content">
+                        <div><i class="fa-regular fa-folder"></i></div>
+                        <h2>Documentary Movie</h2>
+                        <p>
+                          Entertainment - A documentary directed by student studio. Engaged as Art concept
+                          and storyboard sketcher.
+                        </p>
+                        <ul>
+                          <li>Premiere pro</li>
+                          <li>Photoshop</li>
+                          <li>Procreate</li>
+                        </ul>
+                      </section>
+                    </a>
+                    <a href="">
+                      <section class="other-project-content">
+                        <div><i class="fa-regular fa-folder"></i></div>
+                        <h2>Game Space Warrior</h2>
+                        <p>
+                          project about a third-person shooting game created using the processing language.
+                        </p>
+                        <ul>
+                          <li>VS Code</li>
+                          <li>Processing</li>
+                          <li>Java</li>
+                        </ul>
+                      </section>
+                    </a>
+
+                  </section>
+              </section>
+
+              <div class="line"></div>
+
+              <section class="element">
+                <h2>Contact section</h2>
+                <h4>CSS selector:</h4>
+                <p></p>
+                <h4>Sample code:</h4>
+
+                <h4>Rendered element:</h4>
+                <section id="contact" data-aos="fade-up" data-aos-duration="2000">
+                  <div class="contactgreet">
+                    <!-- <h2> Let's get in touch</h2> -->
+
+                    <div class="contactlink">
+                      <a href="#"><i class="fa-brands fa-qq"></i></a>
+                      <a href="#"><i class="fa-solid fa-envelope"></i></a>
+                      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </section>
+
+             
+
+
+          
+            <!-- // COMBINED ELEMENTS SECTION -->
+          </section>
+          <div class="line"></div>
+
+          <section id="citations">
+            <section class="element">
+              <h2>Citations - coding references</h2>
+              <div class="coding">
+                <p>Applying color to HTML elements using CSS. (n.d.). <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color</a>
+                </p>
+                <p>Bologna, J. (2014). Flexbox cheatsheet. Retrieved from <a
+                    href="https://jonitrythall.com/flexbox-cheatsheet">https://jonitrythall.com/flexbox-cheatsheet</a></p>
+                <p>DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. Retrieved from
+                  <a href="https://www.youtube.com/watch?v=zkyIVFoLxgY">https://www.youtube.com/watch?v=zkyIVFoLxgY</a></p>
+                <p>Haw, A. (n.d.). CSS layout tutorial (IAT-235). Retrieved from <a
+                    href="https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100">https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100</a>
+                </p>
+                <p>Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from <a
+                    href="https://www.thesitewizard.com/css/create-coloured-box.shtml">https://www.thesitewizard.com/css/create-coloured-box.shtml</a>
+                </p>
+                <p>How to - CSS/JS modal. (n.d.). Retrieved from <a
+                    href="https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0">https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0</a>
+                </p>
+                
+                <p>Lepage, P., & Andrew, R. (2022). Responsive web design basics. Retrieved from <a
+                    href="https://web.dev/responsive-web-design-basics/">https://web.dev/responsive-web-design-basics/</a></p>
+                <p>Ordering flex items. (n.d.). Retrieved from <a
+                    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items">https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items</a>
+                </p>
+                <p>Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS
+                  | Ecommerce Website | Rizowan Ahmed Safi [Video]. <a
+                    href="https://www.youtube.com/watch?v=F-6hvovxaSs">https://www.youtube.com/watch?v=F-6hvovxaSs</a></p>
+               <p>Layout design references: Cocomole shopping website project.<a href="https://github.com/PeakSolaris/IAT339P02">https://github.com/PeakSolaris/IAT339P02</a>
+               </p>
+               <p>
+                Javascript animation reference codes retrieved from:
+               <p> <a href="https://codepen.io/michalsnik/pen/WxNdvq?html-preprocessor=none">https://codepen.io/michalsnik/pen/WxNdvq?html-preprocessor=none</a></p>
+                <br>
+                <a href="https://tobiasahlin.com/moving-letters/#12"> https://tobiasahlin.com/moving-letters/#12</a>
+               </p>
+               <h2>Portfolio github link</h2>
+               <a href="https://github.com/PeakSolaris/IAT339P03">https://github.com/PeakSolaris/IAT339P03</a>
+              </div>
+
+              <div class="line"></div>
+
+              <h2>Citations - images resources</h2>
+              <p>All images retrieved from Andrea's projects.</p>
+
+            
+          </section>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <section id="styleguide">
+      All rights reserved / <a href="styleguide.html">Styleguides & citation</a>
+    </section>
+    <!-- citation -->
+    <!-- website references:  
+       Applying color to HTML elements using CSS. (n.d.). https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Applying_color#things_that_can_have_color
+                
+        Bologna, J. (2014). Flexbox cheatsheet. Retrieved from https://jonitrythall.com/flexbox-cheatsheet
+        DarkCode. (2018, December 1). Responsive testimonials section using only HTML & CSS [Video]. Retrieved from
+                https://www.youtube.com/watch?v=zkyIVFoLxgY
+        Haw, A. (n.d.). CSS layout tutorial (IAT-235). Retrieved from 
+                https://codepen.io/andrewhaw/pen/vYmgpoo/0db77dedc33eea088b549e4153a45796?editors=1100
+                
+        Heng, C. (n.d.). How to create a coloured ("colored") box in HTML/CSS. Retrieved from 
+                https://www.thesitewizard.com/css/create-coloured-box.shtml
+                
+        How to - CSS/JS modal. (n.d.). Retrieved from
+                https://www.w3schools.com/howto/howto_css_modals.asp#gsc.tab=0
+                
+                
+        Lepage, P., & Andrew, R. (2022). Responsive web design basics. Retrieved from 
+                https://web.dev/responsive-web-design-basics/
+        Ordering flex items. (n.d.). Retrieved from
+                https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Ordering_Flex_Items
+                
+        Safi, R. A. [Rizowan Ahmed Safi]. (2021, July 23). Ecommerce Product Details Page Design Using HTML And CSS
+        | Ecommerce Website | Rizowan Ahmed Safi [Video].
+                https://www.youtube.com/watch?v=F-6hvovxaSs
+        Layout design references: Cocomole shopping website project.
+                https://github.com/PeakSolaris/IAT339P02
+              
+    -->
+    <!-- JavaScript references: 
+      "https://codepen.io/michalsnik/pen/WxNdvq?html-preprocessor=none"
+      "https://codepen.io/michalsnik/pen/WxNdvq?html-preprocessor=none"
+    -->
+    <!-- styleguide link: styleguide.html -->
+  </footer>
+
+</body>
