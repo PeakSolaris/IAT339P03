@@ -135,7 +135,7 @@
   .even .project-img{
     position:relative;
     left:0rem;
-    filter: drop-shadow(rgb(3, 6, 20)0px 0px 8px);
+    filter: drop-shadow(0px 0px 8px black);
 }
 
 }

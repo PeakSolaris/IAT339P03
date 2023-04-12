@@ -50,9 +50,9 @@ h3 a:hover, h3 a:focus{
   }
 
 
-  @media screen and(max-width:800px){
+  @media screen and (max-width:800px){
+
     .citations-right{
-        /* border: 1px solid red; */
         
         margin-right: 10%;
     }
